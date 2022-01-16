@@ -226,6 +226,7 @@ GameObject:
   m_Component:
   - component: {fileID: 900038180}
   - component: {fileID: 900038179}
+  - component: {fileID: 900038181}
   m_Layer: 0
   m_Name: Tests
   m_TagString: Untagged
@@ -261,7 +262,6 @@ MonoBehaviour:
   vector2Int: {x: 1, y: 3}
   vector3: {x: 1, y: 6.5, z: 7}
   vector3Int: {x: 1, y: 9, z: 6}
-  quaternion: {x: 0.36964384, y: -0.23911762, z: 0.8923991, w: 0.09904573}
 --- !u!4 &900038180
 Transform:
   m_ObjectHideFlags: 0
@@ -276,6 +276,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &900038181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 900038178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ef2b752ab594a75af3f8e55ad105519, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1039379945}
+  targets:
+  - {fileID: 1039379945}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -358,4 +373,47 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1039379945
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1039379947}
+  - component: {fileID: 1039379946}
+  m_Layer: 0
+  m_Name: IExample
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1039379946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1039379945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20bc52e3e1af4de89bfa0f96d3135a87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1039379947
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1039379945}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
